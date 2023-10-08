@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+
+  <div class="container">
+  <aside>
+
+    <div class="cardfront">
+      <img src="./images/bg-card-front.png">
+      <div class="cardlogo">
+        <div class="logo1"></div>
+        <div class="logo2"></div>
+      </div>
+
+      <div class="cardinfo">  
+        <div class="card_num" id="oncardnumber">0000 0000 0000 0000</div>
+          <div class="cardfooter">
+            <div id="oncardname">Jane Appleseed</div>
+            
+            <div id="carddate">
+                <div id="oncardmonth">00</div>
+                /
+                <div id="oncardyear">00</div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+      <div class="cardback">
+        <img src="./images/bg-card-back.png">
+        <div class="_cvc" id="oncardcvc">000</div>
+        
+      </div>
+  </aside>
+  
+
+  
+
+ <div class="box" id="interactive-box">
+      <form>
+      <div class="_name">
+        <label for="name">Cardholder Name</label><br>
+      <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed" onKeyUp="document.getElementById('oncardname').innerHTML=this.value"><br>
+      
+      <div id="name-error" class="error"></div>
+    </div>
+
+    <div class="_num">
+        <label for="cardnum" >Card Number</label><br>
+        <input type="number" id="cardnum" name="cardnum" placeholder="e.g. 1234 5678 9123 0000" onKeyUp="document.getElementById('oncardnumber').innerHTML=this.value" ><br>
+
+        <div id="card-error" class="error"></div>
+      </div>
+
+      <div class="_exp-cvc">
+        <div class="_exp">
+            <label for="exp-month">Exp. Date (MM/YY)</label><br>
+            <input type="number" id="exp-month" name="exp-month" placeholder="MM" min="0" max="12" onKeyUp="document.getElementById('oncardmonth').innerHTML=this.value" >
+            <input type="number" id="exp-year" name="exp-year" placeholder="YY" min="0" max="99" onKeyUp="document.getElementById('oncardyear').innerHTML=this.value" ><br>
+
+            <div id="exp-error" class="error"></div>
+        </div>
+
+
+        <div class="_cvcnum">
+            <label for="cvc">CVC</label><br>
+            <input type="number" id="cvc" name="cvc" placeholder="e.g. 123" onKeyUp="document.getElementById('oncardcvc').innerHTML=this.value" ><br>
+
+            <div id="cvc-error" class="error"></div>
+        </div>
+      </div>
+      
+    
+    </form>
+    <div class="_btn">
+            <input type="button" id="confirm" name="confirm" value="Confirm" onclick="confirmation();">
+        </div>
+    </div>
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/LevanMakaradze" target="_blank">Levan Makradze</a>.
+  </div>
+
+
+</div>
+  <!-- Completed state start 
+
+  
+
+-->
+  
+  
+</body>
+</html>

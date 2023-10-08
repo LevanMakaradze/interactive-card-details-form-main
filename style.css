@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
+
+body{
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;  
+}
+
+
+
+aside{
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.cardfront{
+    position: relative;
+    width: 60%;
+    height: 33%;
+    color:white;
+    top: 15%;
+    left: 20%;
+}
+.cardfront img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cardlogo{
+    top: 10%;
+    left: 7%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.logo1{
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 50%;
+  
+}
+
+.logo2{
+    width: 1.8vw;
+  height: 1.8vw;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+
+.cardinfo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    bottom:0%;
+    width: 90%;
+    padding:2% 5%;
+}
+
+#oncardnumber{
+    font-size: 2.3vw;
+}
+.cardfooter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#oncardname{
+    text-transform: uppercase;
+}
+
+
+.cardback{
+    position: relative;
+    width: 60%;
+    height: 33%;
+    color:white;
+    top: 20%;
+    left: 30%;
+}
+.cardback img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+._cvc{
+    position: relative;
+    color:white;
+    left:80%;
+    top:45%;
+    font-size: 1.2vw;
+    width: 10%;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error{
+    color: hsl(0, 100%, 66%);
+}
+
+#carddate{
+    display: flex;
+    position: absolute;
+    right: 5%;
+}
+
+
+.box{
+    
+    position: absolute;
+    right: 15vw;
+    top:30vh;
+    width: 30%;
+    height: 40%;
+    letter-spacing: 2px;
+}
+
+
+label{
+    text-transform: uppercase;
+    
+}
+input{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 7px;
+    border: 1px solid  hsl(249, 99%, 64%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding: 10px;
+    outline: none;
+}
+input:focus{
+    border: 1px solid hsl(278, 94%, 30%);
+}
+
+._name{
+    margin-bottom: 2.5vh;
+}
+
+._name input{
+    width: 80%;
+}
+._num{
+    margin-bottom: 2.5vh;
+}
+
+._num input{
+    width: 80%;
+}
+
+._exp-cvc{
+    position: relative;
+    display: flex ;
+    margin-bottom: 3.5vh;
+    width: 90%;
+}
+
+._cvcnum{
+    margin-left: 5%;
+}
+
+._cvcnum input{
+    width: 90%;
+}
+
+
+
+
+._btn input{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    width: 84%;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+._btn input:hover{
+    background-color: hsla(278, 68%, 11%, 0.9);
+    transition: 0.2s;
+}
+._btn input:active{
+    transition: 0.1s;
+    background-color: rgb(20, 0, 32);
+    transform:translateY(5px);
+}
+
+.attribution{
+    width: fit-content;
+    height: fit-content;
+    margin: 97vh auto;
+}
+.attribution a{
+    color: hsla(278, 68%, 11%);
+    text-decoration: none;
+}
+
+
+.accepted-hidden{
+    text-align: center;
+    padding: 0% 15% 5% 0%;
+    color:grey;
+}
+.accepted-hidden h1{
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+    
+
+
